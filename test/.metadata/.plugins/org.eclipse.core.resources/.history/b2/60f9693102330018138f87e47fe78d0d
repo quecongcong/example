@@ -1,0 +1,16 @@
+package util;
+
+/**
+ * Title: Pets.class<br>
+ * Description: <br>
+ * Copyright (c) 人和网版权所有 2017    <br>
+ * Create DateTime: 2018年3月29日 上午11:34:36 <br>
+ *
+ * @author gaoxing
+ */
+public class Pets {
+	
+	public static final arrayList(int size){
+		
+	}
+}

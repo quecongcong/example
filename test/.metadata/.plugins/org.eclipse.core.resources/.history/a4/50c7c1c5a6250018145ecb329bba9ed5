@@ -1,0 +1,22 @@
+package multiplexing;
+
+import util.Print;
+
+/**
+ * Title: CADSystem.class<br>
+ * Description: <br>
+ * Copyright (c) 人和网版权所有 2017 <br>
+ * Create DateTime: 2018年3月12日 上午11:34:49 <br>
+ *
+ * @author gaoxing
+ */
+
+class Shap {
+	public Shap(int i) {
+		Print.print("Shap constructor");
+	}
+}
+
+public class CADSystem {
+
+}

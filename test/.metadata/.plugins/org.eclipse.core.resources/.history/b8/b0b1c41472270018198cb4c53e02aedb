@@ -1,0 +1,15 @@
+package inter;
+
+/**
+ * Title: TestInterface.class<br>
+ * Description: <br>
+ * Copyright (c) 人和网版权所有 2017 <br>
+ * Create DateTime: 2018年3月14日 下午6:23:43 <br>
+ *
+ * @author gaoxing
+ */
+public interface TestInterface {
+	private void print();
+
+	void print(Object object);
+}

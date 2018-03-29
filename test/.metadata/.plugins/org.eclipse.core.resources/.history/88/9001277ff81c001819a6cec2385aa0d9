@@ -1,0 +1,15 @@
+package operator;
+
+/**
+ * Title: Literals.class<br>
+ * Description: <br>
+ * Copyright (c) 人和网版权所有 2017    <br>
+ * Create DateTime: 2018年3月1日 上午10:29:03 <br>
+ *
+ * @author gaoxing
+ */
+public class Literals {
+	public static void main(String[] args) {
+		int i1 = 0x2f;
+	}
+}

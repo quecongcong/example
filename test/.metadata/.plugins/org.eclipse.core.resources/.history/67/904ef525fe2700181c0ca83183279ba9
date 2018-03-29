@@ -1,0 +1,120 @@
+package inter;
+
+import static util.Print.*;
+
+import initializeandclear.Notes;
+
+/**
+ * Title: Music5.class<br>
+ * Description: <br>
+ * Copyright (c) 人和网版权所有 2017 <br>
+ * Create DateTime: 2018年3月15日 上午10:25:57 <br>
+ *
+ * @author gaoxing
+ */
+//interface Instrument {
+//	int VALUE = 5;
+//
+//	void play(Notes notes);
+//
+//	void adjust();
+//}
+
+interface Playable{
+	void play(Notes notes);
+}
+
+abstract class Instrument{
+	int VALUE = 5;
+	abstract void play(Notes notes);
+
+	abstract void adjust();
+}
+
+class Wind extends Instrument {
+
+	@Override
+	public void play(Notes notes) {
+		print(this + ".play() " + notes);
+	}
+
+	@Override
+	public void adjust() {
+		print(this + ".adjust() ");
+	}
+
+	@Override
+	public String toString() {
+		return "Wind";
+	}
+
+}
+
+class Percussion extends Instrument {
+
+	@Override
+	public void play(Notes notes) {
+		print(this + ".play() " + notes);
+	}
+
+	@Override
+	public void adjust() {
+		print(this + ".adjust() ");
+	}
+
+	@Override
+	public String toString() {
+		return "Percussion";
+	}
+
+}
+
+class Stringed extends Instrument {
+
+	@Override
+	public void play(Notes notes) {
+		print(this + ".play() " + notes);
+	}
+
+	@Override
+	public void adjust() {
+		print(this + ".adjust() ");
+	}
+
+	@Override
+	public String toString() {
+		return "Stringed";
+	}
+
+}
+
+class Brass extends Wind {
+	@Override
+	public String toString() {
+		return "Brass";
+	}
+}
+
+class Woodwind extends Wind {
+	@Override
+	public String toString() {
+		return "Woodwind";
+	}
+}
+
+public class Music5 {
+	static void tune(Instrument i) {
+		i.play(Notes.ONE);
+	}
+
+	static void tuneAll(Instrument[] e) {
+		for (Instrument i : e) {
+			tune(i);
+		}
+	}
+
+	public static void main(String[] args) {
+		Instrument[] orchestra = { new Wind(), new Percussion(), new Stringed(), new Brass(), new Woodwind() };
+		tuneAll(orchestra);
+	}
+}

@@ -1,0 +1,13 @@
+package inter;
+
+/**
+ * Title: AbstractClass.class<br>
+ * Description: <br>
+ * Copyright (c) 人和网版权所有 2017    <br>
+ * Create DateTime: 2018年3月14日 下午5:55:26 <br>
+ *
+ * @author gaoxing
+ */
+public abstract class AbstractClass {
+
+}

@@ -1,0 +1,13 @@
+package multiplexing;
+
+/**
+ * Title: Cleanser.class<br>
+ * Description: <br>
+ * Copyright (c) 人和网版权所有 2017    <br>
+ * Create DateTime: 2018年3月9日 下午2:15:26 <br>
+ *
+ * @author gaoxing
+ */
+class Cleanser {
+	private String s = "Cleanser";
+}

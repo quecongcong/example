@@ -1,0 +1,61 @@
+package inter;
+
+import java.util.Random;
+import static util.Print.*;
+
+/**
+ * Title: Games.class<br>
+ * Description: <br>
+ * Copyright (c) 人和网版权所有 2017 <br>
+ * Create DateTime: 2018年3月19日 下午4:26:22 <br>
+ *
+ * @author gaoxing
+ */
+interface Game {
+	static final Random random = new Random();
+
+	void game();
+}
+
+interface GameFactory {
+	Game getGame();
+}
+
+class TossCoin implements Game {
+	private static final int COIN_OBCERSE = 1;// 正面
+
+	@Override
+	public void game() {
+		print("开始掷硬币----");
+		int rand = random.nextInt(2);
+		if (rand == COIN_OBCERSE) {
+			print("掷出了正面");
+		} else {
+			print("掷出了反面");
+		}
+	}
+
+}
+
+class TossCoinFactory implements GameFactory {
+
+	@Override
+	public Game getGame() {
+		return new TossCoin();
+	}
+
+}
+
+class Dice implements Game {
+
+	@Override
+	public void game() {
+		int rand = random.nextInt(7);
+		print("掷骰子掷出了" + rand + "点");
+	}
+
+}
+
+public class Games {
+
+}

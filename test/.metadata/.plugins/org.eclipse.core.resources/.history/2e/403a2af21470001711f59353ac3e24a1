@@ -1,0 +1,17 @@
+package com.algorithm;
+
+/**
+ * Title: QuickSort.class<br>
+ * Description: <br>
+ * Copyright (c) 人和网版权所有 2017    <br>
+ * Create DateTime: 2017年7月24日 上午10:04:53 <br>
+ *
+ * @author gaoxing
+ */
+public class QuickSorty {
+	private int[]array;
+	
+	public void setArray(int[]array) {
+		
+	}
+}

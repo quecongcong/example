@@ -1,0 +1,29 @@
+package multiplexing;
+
+/**
+ * Title: Poppet.class<br>
+ * Description: <br>
+ * Copyright (c) 人和网版权所有 2017    <br>
+ * Create DateTime: 2018年3月13日 下午3:39:37 <br>
+ *
+ * @author gaoxing
+ */
+public class Poppet {
+	final int i;
+	
+	public Poppet() {
+		// TODO Auto-generated constructor stub
+		i = 0;
+	}
+	
+	public Poppet(int i){
+		this.i = i;
+	}
+	
+	public static void main(String[] args) {
+		Poppet poppet1 = new Poppet();
+//		poppet1.i = 1;
+		Poppet poppet2 = new Poppet(2);
+//		poppet2.i = 1;
+	}
+}

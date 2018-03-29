@@ -1,0 +1,27 @@
+package holdingobject;
+
+import java.util.LinkedList;
+
+/**
+ * Title: Stack.class<br>
+ * Description: <br>
+ * Copyright (c) 人和网版权所有 2017 <br>
+ * Create DateTime: 2018年3月29日 下午3:18:00 <br>
+ *
+ * @author gaoxing
+ */
+public class Stack<T> {
+	private LinkedList<T> linkedList = new LinkedList<>();
+
+	public void push(T t) {
+		linkedList.addFirst(t);
+	}
+	
+	public T peek() {
+		return linkedList.getFirst();
+	}
+	
+	public T pop() {
+		return linkedList.removeFirst();
+	}
+}

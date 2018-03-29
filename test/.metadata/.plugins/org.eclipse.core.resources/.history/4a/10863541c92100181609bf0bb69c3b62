@@ -1,0 +1,21 @@
+package initializeandclear;
+
+/**
+ * Title: ComputerTest.class<br>
+ * Description: <br>
+ * Copyright (c) 人和网版权所有 2017 <br>
+ * Create DateTime: 2018年3月6日 下午2:50:31 <br>
+ *
+ * @author gaoxing
+ */
+public class ComputerTest {
+	public static void main(String[] args) {
+		{
+			Computer computer1 = new Computer(true);
+			computer1.open = true;
+//			computer1 = null;
+		}
+		new Computer(true).close();
+		System.gc();
+	}
+}

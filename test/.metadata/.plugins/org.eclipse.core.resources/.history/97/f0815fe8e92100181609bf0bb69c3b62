@@ -1,0 +1,22 @@
+package initializeandclear;
+
+/**
+ * Title: Burrito.class<br>
+ * Description: <br>
+ * Copyright (c) 人和网版权所有 2017    <br>
+ * Create DateTime: 2018年3月7日 下午5:26:20 <br>
+ *
+ * @author gaoxing
+ */
+public class Burrito {
+	
+	Spiciness degree;
+	public Burrito(Spiciness degree) {
+		// TODO Auto-generated constructor stub
+		this.degree = degree;
+	}
+	
+	public void describe(){
+		System.out.println("This burrito is ");
+	}
+}

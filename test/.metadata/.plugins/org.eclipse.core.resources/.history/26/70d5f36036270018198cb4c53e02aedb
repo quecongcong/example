@@ -1,0 +1,16 @@
+package polymorphic;
+import static util.Print.*;
+/**
+ * Title: Frog.class<br>
+ * Description: <br>
+ * Copyright (c) 人和网版权所有 2017    <br>
+ * Create DateTime: 2018年3月14日 上午11:17:08 <br>
+ *
+ * @author gaoxing
+ */
+class Characteristic{
+	private String s;
+}
+public class Frog {
+	private String s;
+}

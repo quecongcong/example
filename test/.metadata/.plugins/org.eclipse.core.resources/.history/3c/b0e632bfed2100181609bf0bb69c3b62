@@ -1,0 +1,28 @@
+package initializeandclear;
+
+/**
+ * Title: SimpleNotes.class<br>
+ * Description: <br>
+ * Copyright (c) 人和网版权所有 2017    <br>
+ * Create DateTime: 2018年3月7日 下午5:54:20 <br>
+ *
+ * @author gaoxing
+ */
+public class SimpleNotes {
+	Notes notes;
+	public SimpleNotes(Notes notes) {
+		this.notes = notes;
+	}
+	
+	public void descripe(){
+		System.out.println("这是一张:");
+		switch (notes) {
+		case ONE:
+			System.out.println("一元纸币");
+			break;
+
+		default:
+			break;
+		}
+	}
+}

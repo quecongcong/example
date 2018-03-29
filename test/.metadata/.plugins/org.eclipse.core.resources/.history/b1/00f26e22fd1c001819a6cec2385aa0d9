@@ -1,0 +1,23 @@
+package operator;
+
+/**
+ * Title: Literals.class<br>
+ * Description: <br>
+ * Copyright (c) 人和网版权所有 2017    <br>
+ * Create DateTime: 2018年3月1日 上午10:29:03 <br>
+ *
+ * @author gaoxing
+ */
+public class Literals {
+	public static void main(String[] args) {
+		int i = 0x2f;
+		System.out.println(i>>>16);
+		System.out.println(i=i<<16);
+		int i1 = 0x2f;
+		System.out.println("十进制i1:"+i1);
+		System.out.println("i1:"+Integer.toBinaryString(i1));
+		int i2 = 0x2F;
+		System.out.println("十进制i2:"+i2);
+		System.out.println("i2:"+Integer.toBinaryString(i2));
+	}
+}

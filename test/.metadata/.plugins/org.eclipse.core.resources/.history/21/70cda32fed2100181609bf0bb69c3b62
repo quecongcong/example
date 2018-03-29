@@ -1,0 +1,19 @@
+package initializeandclear;
+
+/**
+ * Title: SimpleEnumUse.class<br>
+ * Description: <br>
+ * Copyright (c) 人和网版权所有 2017 <br>
+ * Create DateTime: 2018年3月7日 下午4:56:16 <br>
+ *
+ * @author gaoxing
+ */
+public class SimpleEnumUse {
+	public static void main(String[] args) {
+		Spiciness howhot = Spiciness.MEDIUM;
+		System.out.println(howhot);
+		for (Spiciness spiciness : Spiciness.values()) {
+			System.out.println(spiciness + ",ordinal" + spiciness.ordinal());
+		}
+	}
+}

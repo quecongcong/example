@@ -1,0 +1,19 @@
+package inter;
+
+/**
+ * Title: Games.class<br>
+ * Description: <br>
+ * Copyright (c) 人和网版权所有 2017 <br>
+ * Create DateTime: 2018年3月19日 下午4:26:22 <br>
+ *
+ * @author gaoxing
+ */
+interface Game {
+	void game();
+}
+interface GameFactory{
+	
+}
+public class Games {
+
+}

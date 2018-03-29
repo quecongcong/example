@@ -1,0 +1,38 @@
+package innerclass;
+
+/**
+ * Title: Exercise7.class<br>
+ * Description: <br>
+ * Copyright (c) 人和网版权所有 2017    <br>
+ * Create DateTime: 2018年3月20日 下午2:50:44 <br>
+ *
+ * @author gaoxing
+ */
+public class Exercise7 {
+	class InnerClass{
+		private int a;
+		void update(int x){
+			i = x;
+			value();
+		}
+	}
+	private int i;
+	public Exercise7(int x) {
+		i = x;
+	}
+	private int value(){
+		return i;
+	}
+	
+	public void run() {
+		InnerClass innerClass = new InnerClass();
+		innerClass.update(1);
+		System.out.println(i);
+		System.out.println(a);
+	}
+	
+	public static void main(String[] args) {
+		Exercise7 exercise7 = new Exercise7(0);
+		exercise7.run();
+	}
+}

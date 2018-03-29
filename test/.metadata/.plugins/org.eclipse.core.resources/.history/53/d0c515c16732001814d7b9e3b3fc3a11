@@ -1,0 +1,13 @@
+package holdingobject;
+
+/**
+ * Title: Gerbil.class<br>
+ * Description: <br>
+ * Copyright (c) 人和网版权所有 2017    <br>
+ * Create DateTime: 2018年3月28日 下午5:08:01 <br>
+ *
+ * @author gaoxing
+ */
+public class Gerbil {
+	int gerbilNum;
+}

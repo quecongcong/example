@@ -1,0 +1,30 @@
+package initializeandclear;
+
+/**
+ * Title: StaticDemo.class<br>
+ * Description: <br>
+ * Copyright (c) 人和网版权所有 2017    <br>
+ * Create DateTime: 2018年3月7日 下午2:31:25 <br>
+ *
+ * @author gaoxing
+ */
+public class StaticDemo {
+
+}
+
+class Bowl{
+	public Bowl(int marker) {
+		// TODO Auto-generated constructor stub
+		System.out.println("Bowl("+marker+")");
+	}
+	void f1(int marker){
+		System.out.println("f1("+marker+")");
+	}
+}
+
+class Table{
+	static Bowl bowl1 = new Bowl(1);
+	public Table() {
+		// TODO Auto-generated constructor stub
+	}
+}

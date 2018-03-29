@@ -1,0 +1,44 @@
+package com.algorithm;
+
+import java.text.DateFormatSymbols;
+import java.text.ParseException;
+import java.text.SimpleDateFormat;
+import java.util.Calendar;
+import java.util.Date;
+
+public enum EnumDemo {
+	
+	Monday(Calendar.MONDAY),
+	Tuesday(Calendar.TUESDAY),
+	Wednesday(Calendar.WEDNESDAY),
+	Thursday(Calendar.THURSDAY),
+	Friday(Calendar.FRIDAY),
+	Saturday(Calendar.SATURDAY),
+	Sunday(Calendar.SUNDAY);
+	
+	EnumDemo(int index) {
+		this.index = index;
+	}
+	public final int index;
+	private static DateFormatSymbols dateFormatSymbols = new DateFormatSymbols();
+	
+	@Override
+	public String toString() {
+		return dateFormatSymbols.getWeekdays()[index];
+	}
+	public static void main(String[] args) {
+		System.out.println(EnumDemo.Monday.toString());
+		System.out.println(String.format("%s"+EnumDemo.Monday.toString()+"%s", "哇","kaka"));
+		SimpleDateFormat format = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
+		Calendar calendar = Calendar.getInstance();
+		Date date = new Date();
+		System.out.println(format.format(date));
+		try {
+			format.parse("");
+		} catch (ParseException e) {
+			e.printStackTrace();
+		}
+		calendar.setTime(date);
+		System.out.println(calendar.get(Calendar.MONTH));
+	}
+}

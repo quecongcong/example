@@ -1,0 +1,25 @@
+package holdingobject;
+
+import java.util.Iterator;
+import java.util.List;
+
+import util.Pets;
+
+/**
+ * Title: SimpleIteration.class<br>
+ * Description: <br>
+ * Copyright (c) 人和网版权所有 2017    <br>
+ * Create DateTime: 2018年3月29日 上午11:37:04 <br>
+ *
+ * @author gaoxing
+ */
+public class SimpleIteration {
+	public static void main(String[] args) {
+		List<Pet> pets = Pets.arrayList(12);
+		Iterator<Pet> it = pets.iterator();
+		while (it.hasNext()) {
+			Pet p = (Pet) it.next();
+			System.out.println();
+		}
+	}
+}

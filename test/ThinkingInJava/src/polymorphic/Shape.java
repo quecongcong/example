@@ -1,0 +1,24 @@
+package polymorphic;
+import static util.Print.*;
+
+/**
+ * Title: Shape.class<br>
+ * Description: <br>
+ * Copyright (c) 人和网版权所有 2017 <br>
+ * Create DateTime: 2018年3月14日 上午9:47:57 <br>
+ *
+ * @author gaoxing
+ */
+public class Shape {
+	public Shape() {
+		print("Shape contruction");
+	}
+
+	public void draw() {
+		print("Shape draw");
+	}
+
+	public void erase() {
+		print("Shape erase");
+	}
+}

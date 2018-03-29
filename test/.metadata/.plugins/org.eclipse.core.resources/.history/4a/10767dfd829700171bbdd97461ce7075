@@ -1,0 +1,47 @@
+package com.classloader;
+
+import java.util.ArrayList;
+import java.util.List;
+
+/**
+ * Title: Test.class<br>
+ * Description: <br>
+ * Copyright (c) 人和网版权所有 2017    <br>
+ * Create DateTime: 2017年8月28日 下午3:41:39 <br>
+ *
+ * @author gaoxing
+ */
+public class Test {
+	
+	private Integer num;
+	public Test(Integer num) {
+		this.num = num;
+	}
+	public Integer getNum() {
+		return num;
+	}
+
+	public void setNum(Integer num) {
+		this.num = num;
+	}
+
+	public  void test() {
+		ClassLoader classLoader = this.getClass().getClassLoader();
+		while(classLoader != null){
+			System.out.println(classLoader.getClass().getCanonicalName());
+			classLoader = classLoader.getParent();
+		}
+	}
+	
+	public static void main(String[] args) {
+		List<Test> list = new ArrayList<Test>();
+		list.add(new Test(1));
+		list.add(new Test(1));
+		for (int i = 0; i < list.size(); i++) {
+			list.get(i).setNum(2);
+		}
+		for (Test integer : list) {
+			System.out.println(integer.getNum());
+		}
+	}
+}

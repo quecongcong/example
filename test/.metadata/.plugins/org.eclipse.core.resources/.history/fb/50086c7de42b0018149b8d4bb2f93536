@@ -1,0 +1,24 @@
+package inter;
+
+/**
+ * Title: Parcel.class<br>
+ * Description: <br>
+ * Copyright (c) 人和网版权所有 2017    <br>
+ * Create DateTime: 2018年3月19日 下午5:46:06 <br>
+ *
+ * @author gaoxing
+ */
+public class Parcel {
+	class Contents{
+		private int i = 11;
+		public int value() {
+			return i;
+		}
+	}
+	class Destination{
+		private String label;
+		public Destination(String whereTo) {
+			label = whereTo;
+		}
+	}
+}

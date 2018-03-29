@@ -1,0 +1,54 @@
+package util;
+
+import java.io.PrintStream;
+
+/**
+ * Title: Print.class<br>
+ * Description: <br>
+ * Copyright (c) 人和网版权所有 2017 <br>
+ * Create DateTime: 2018年3月8日 下午3:25:08 <br>
+ *
+ * @author gaoxing
+ */
+public class Print {
+
+	/**
+	 * 
+	* @Title: print
+	* @Description:(空行)
+	* @param 
+	* @return void
+	* @throws
+	 */
+	public static void print() {
+		System.out.println();
+	}
+
+	/**
+	 * 
+	* @Title: print
+	* @Description:(打印之后换行)
+	* @param @param object
+	* @return void
+	* @throws
+	 */
+	public static void print(Object object) {
+		System.out.println(object);
+	}
+
+	/**
+	 * 
+	* @Title: printnb
+	* @Description:(不换行打印)
+	* @param @param object
+	* @return void
+	* @throws
+	 */
+	public static void printnb(Object object) {
+		System.out.print(object);
+	}
+
+	public static PrintStream printf(String format, Object... args) {
+		return System.out.printf(format, args);
+	}
+}

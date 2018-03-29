@@ -1,0 +1,24 @@
+package holdingobject;
+
+import static util.Print.*;
+
+import java.util.Collections;
+import java.util.HashSet;
+import java.util.Set;
+
+/**
+ * Title: SetOperations.class<br>
+ * Description: <br>
+ * Copyright (c) 人和网版权所有 2017    <br>
+ * Create DateTime: 2018年3月29日 下午4:22:43 <br>
+ *
+ * @author gaoxing
+ */
+public class SetOperations {
+	public static void main(String[] args) {
+		Set<String> set1 = new HashSet<>();
+		Collections.addAll(set1, "A B C D E F G H I J K L".split(" "));
+		set1.add("M]");
+		print("H:" + set1.contains("H"));
+	}
+}

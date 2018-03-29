@@ -1,0 +1,24 @@
+package initializeandclear;
+
+/**
+ * Title: OverloadingVarargs.class<br>
+ * Description: <br>
+ * Copyright (c) 人和网版权所有 2017    <br>
+ * Create DateTime: 2018年3月7日 下午4:27:51 <br>
+ *
+ * @author gaoxing
+ */
+public class OverloadingVarargs {
+	static void f(char c,Character...args){
+		System.out.println("f(Character...args)");
+	}
+	
+	static void f(float i,Character... args){
+		System.out.println("f(float i,Character...args)");
+	}
+	
+	public static void main(String[] args) {
+		f(1,'c');
+		f('a','b');
+	}
+}

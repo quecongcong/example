@@ -1,0 +1,31 @@
+package inter;
+
+import java.util.Random;
+
+/**
+ * Title: Games.class<br>
+ * Description: <br>
+ * Copyright (c) 人和网版权所有 2017 <br>
+ * Create DateTime: 2018年3月19日 下午4:26:22 <br>
+ *
+ * @author gaoxing
+ */
+interface Game {
+ 	static final Random random = new Random();
+	void game();
+}
+interface GameFactory{
+	Game getGame();
+}
+class TossCoin implements Game{
+	private static final int COIN_OBCERSE = 1;
+	private static final int COIN_REVERSE =0;
+	@Override
+	public void game() {
+		
+	}
+	
+}
+public class Games {
+
+}

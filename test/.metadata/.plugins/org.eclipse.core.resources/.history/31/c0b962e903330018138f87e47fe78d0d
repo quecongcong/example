@@ -1,0 +1,55 @@
+package holdingobject;
+
+import static util.Print.*;
+
+import java.util.ArrayList;
+import java.util.HashSet;
+import java.util.Iterator;
+import java.util.List;
+import java.util.Set;
+
+/**
+ * Title: Gerbil.class<br>
+ * Description: <br>
+ * Copyright (c) 人和网版权所有 2017 <br>
+ * Create DateTime: 2018年3月28日 下午5:08:01 <br>
+ *
+ * @author gaoxing
+ */
+public class Gerbil {
+	int gerbilNum;
+
+	public Gerbil(int gerbilNum) {
+		this.gerbilNum = gerbilNum;
+	}
+
+	void hop() {
+		print(gerbilNum + "号沙鼠正在跳跃");
+	}
+	
+	public static void main(String[] args) {
+		List<Gerbil> list = new ArrayList<>();
+		int counter = 0;
+		list.add(new Gerbil(counter++));
+		list.add(new Gerbil(counter++));
+		list.add(new Gerbil(counter++));
+		list.add(new Gerbil(counter++));
+		list.add(new Gerbil(counter++));
+		list.add(new Gerbil(counter++));
+		list.add(new Gerbil(counter++));
+		list.add(new Gerbil(counter++));
+		list.add(new Gerbil(counter++));
+		list.add(new Gerbil(counter++));
+		
+		for (int i = 0; i < list.size(); i++) {
+			list.get(i).hop();
+		}
+		
+		Iterator<Gerbil> it = list.iterator();
+		
+		Set<Integer> set = new HashSet<>();
+		set.add(1);
+		set.add(1);
+		System.out.println(set.size());
+	}
+}

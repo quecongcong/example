@@ -1,0 +1,16 @@
+package inter;
+
+/**
+ * Title: CycleFactories.class<br>
+ * Description: <br>
+ * Copyright (c) 人和网版权所有 2017    <br>
+ * Create DateTime: 2018年3月19日 下午4:10:13 <br>
+ *
+ * @author gaoxing
+ */
+interface Cycle{
+	
+}
+public class CycleFactories {
+
+}

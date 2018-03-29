@@ -1,0 +1,13 @@
+package multiplexing;
+
+/**
+ * Title: Liquid.class<br>
+ * Description: <br>
+ * Copyright (c) 人和网版权所有 2017    <br>
+ * Create DateTime: 2018年3月9日 下午2:53:56 <br>
+ *
+ * @author gaoxing
+ */
+public class Liquid extends Detergent{
+	
+}

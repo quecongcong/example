@@ -1,0 +1,79 @@
+package multiplexing;
+
+import util.Print;
+
+/**
+ * Title: CADSystem.class<br>
+ * Description: <br>
+ * Copyright (c) 人和网版权所有 2017 <br>
+ * Create DateTime: 2018年3月12日 上午11:34:49 <br>
+ *
+ * @author gaoxing
+ */
+
+class Shap {
+	public Shap(int i) {
+		Print.print("Shap constructor");
+	}
+
+	void dispose() {
+		Print.print("Shap dispose");
+	}
+}
+
+class Circle extends Shap {
+
+	public Circle(int i) {
+		super(i);
+		Print.print("Drawing Circle");
+	}
+
+	@Override
+	void dispose() {
+		Print.print("Erasing Circle");
+		super.dispose();
+	}
+
+}
+
+class Triangle extends Shap{
+
+	public Triangle(int i) {
+		super(i);
+		Print.print("Drawing Triangle");
+	}
+	@Override
+	void dispose() {
+		Print.print("Erasing Triangle");
+		super.dispose();
+	}
+}
+
+class Line extends Shap {
+	private int start, end;
+
+	public Line(int start, int end) {
+		super(start);
+		this.start = start;
+		this.end = end;
+		Print.print("Drawing Line:" + start + "," + end);
+		// TODO Auto-generated constructor stub
+	}
+
+	@Override
+	void dispose() {
+		Print.print("Erasing Circle");
+		super.dispose();
+	}
+}
+
+public class CADSystem extends Shap{
+	private Circle c;
+	private Triangle t;
+	private Line[] lines = new Line[3];
+	public CADSystem(int i) {
+		super(i);
+		// TODO Auto-generated constructor stub
+	}
+
+}

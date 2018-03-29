@@ -1,0 +1,13 @@
+package polymorphic;
+
+/**
+ * Title: Circle.class<br>
+ * Description: <br>
+ * Copyright (c) 人和网版权所有 2017    <br>
+ * Create DateTime: 2018年3月14日 上午9:52:30 <br>
+ *
+ * @author gaoxing
+ */
+public class Circle {
+
+}

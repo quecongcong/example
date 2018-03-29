@@ -1,0 +1,28 @@
+package inter;
+
+/**
+ * Title: Adventure.class<br>
+ * Description: <br>
+ * Copyright (c) 人和网版权所有 2017 <br>
+ * Create DateTime: 2018年3月15日 下午3:04:49 <br>
+ *
+ * @author gaoxing
+ */
+interface CanFight {
+	void fight();
+}
+
+interface CanSwim {
+	void swim();
+}
+
+interface CanFly {
+	void fly();
+}
+class ActionCharacter{
+	
+}
+
+public class Adventure {
+
+}

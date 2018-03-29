@@ -1,0 +1,20 @@
+package visitcontrolright;
+
+import static util.Print.*;
+
+/**
+ * Title: PrintTest.class<br>
+ * Description: <br>
+ * Copyright (c) 人和网版权所有 2017    <br>
+ * Create DateTime: 2018年3月8日 下午3:35:39 <br>
+ *
+ * @author gaoxing
+ */
+public class PrintTest {
+	public static void main(String[] args) {
+		print("Available from now on!");
+		print(100);
+		print(100l);
+		print(Math.PI);
+	}
+}

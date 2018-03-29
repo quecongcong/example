@@ -1,0 +1,25 @@
+package polymorphic;
+import static util.Print.*;
+/**
+ * Title: Circle.class<br>
+ * Description: <br>
+ * Copyright (c) 人和网版权所有 2017    <br>
+ * Create DateTime: 2018年3月14日 上午9:52:30 <br>
+ *
+ * @author gaoxing
+ */
+public class Circle extends Shape{
+	public Circle() {
+		print("Circle contruction");
+	}
+	
+	@Override
+	public void draw() {
+		print("Circle draw");
+	}
+	
+	@Override
+	public void erase() {
+		print("Circle erase");
+	}
+}

@@ -1,0 +1,40 @@
+package multiplexing;
+
+import util.Print;
+
+/**
+ * Title: Aclass.class<br>
+ * Description: <br>
+ * Copyright (c) 人和网版权所有 2017    <br>
+ * Create DateTime: 2018年3月9日 下午4:05:02 <br>
+ *
+ * @author gaoxing
+ */
+public class Aclass {
+	public Aclass() {
+		Print.print("aclass");
+	}
+	
+	public static void main(String[] args) {
+		Cclass cclass = new Cclass();
+		Print.print(cclass);
+	}
+}
+
+class Bclass{
+	public Bclass() {
+		Print.print("bclass");
+	}
+}
+
+class Cclass extends Aclass{
+	Bclass bclass = new Bclass();
+	public Cclass() {
+		Print.print("cclass");
+	}
+	
+	@Override
+	public String toString() {
+		return "C+CLASS";
+	}
+}

@@ -1,0 +1,20 @@
+package visitcontrolright;
+
+/**
+ * Title: Lunch.class<br>
+ * Description: <br>
+ * Copyright (c) 人和网版权所有 2017    <br>
+ * Create DateTime: 2018年3月9日 上午10:09:36 <br>
+ *
+ * @author gaoxing
+ */
+public class Lunch {
+	
+}
+
+class Soup1{
+	private Soup1(){}
+	public static Soup1 makeSoup() {
+		return new Soup1();
+	}
+}

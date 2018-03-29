@@ -1,0 +1,24 @@
+package polymorphic;
+import static util.Print.*;
+/**
+ * Title: RoundGlyph.class<br>
+ * Description: <br>
+ * Copyright (c) 人和网版权所有 2017    <br>
+ * Create DateTime: 2018年3月14日 下午2:22:54 <br>
+ *
+ * @author gaoxing
+ */
+
+class Glyph{
+	void draw(){
+		print("Glyph.draw()");
+	}
+	public Glyph() {
+		print("Glyph() before draw()");
+		draw();
+		print("");
+	}
+}
+public class RoundGlyph {
+
+}

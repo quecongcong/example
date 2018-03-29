@@ -1,0 +1,46 @@
+package inter;
+
+import static util.Print.*;
+
+import initializeandclear.Notes;
+
+/**
+ * Title: Music5.class<br>
+ * Description: <br>
+ * Copyright (c) 人和网版权所有 2017 <br>
+ * Create DateTime: 2018年3月15日 上午10:25:57 <br>
+ *
+ * @author gaoxing
+ */
+interface Instrument {
+	int VALUE = 5;
+
+	void play(Notes notes);
+
+	void adjust();
+}
+
+class Wind implements Instrument {
+
+	@Override
+	public void play(Notes notes) {
+		// TODO Auto-generated method stub
+		print(this + ".play()" + notes);
+	}
+
+	@Override
+	public void adjust() {
+		// TODO Auto-generated method stub
+		print(this + ".adjust()");
+	}
+	
+	@Override
+	public String toString() {
+		return "Wind";
+	}
+
+}
+
+public class Music5 {
+
+}

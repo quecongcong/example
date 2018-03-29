@@ -1,0 +1,27 @@
+package holdingobject;
+
+import static util.Print.*;
+
+/**
+ * Title: Gerbil.class<br>
+ * Description: <br>
+ * Copyright (c) 人和网版权所有 2017 <br>
+ * Create DateTime: 2018年3月28日 下午5:08:01 <br>
+ *
+ * @author gaoxing
+ */
+public class Gerbil {
+	int gerbilNum;
+
+	public Gerbil(int gerbilNum) {
+		this.gerbilNum = gerbilNum;
+	}
+
+	void hop() {
+		print(gerbilNum + "号沙鼠正在跳跃");
+	}
+	
+	public static void main(String[] args) {
+		
+	}
+}

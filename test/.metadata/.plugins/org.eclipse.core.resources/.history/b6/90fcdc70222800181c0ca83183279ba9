@@ -1,0 +1,35 @@
+package inter;
+
+/**
+ * Title: DiamondExtends.class<br>
+ * Description: <br>
+ * Copyright (c) 人和网版权所有 2017    <br>
+ * Create DateTime: 2018年3月15日 下午3:26:46 <br>
+ *
+ * @author gaoxing
+ */
+interface A{
+	void f();
+}
+class B implements A{
+
+	@Override
+	public void f() {
+		// TODO Auto-generated method stub
+		
+	}
+	
+}
+
+class C implements A{
+
+	@Override
+	public void f() {
+		// TODO Auto-generated method stub
+		
+	}
+	
+}
+public class DiamondExtends {
+
+}

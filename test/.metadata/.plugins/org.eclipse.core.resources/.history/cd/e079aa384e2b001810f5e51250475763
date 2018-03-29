@@ -1,0 +1,92 @@
+package inter;
+import static util.Print.*;
+/**
+ * Title: CycleFactories.class<br>
+ * Description: <br>
+ * Copyright (c) 人和网版权所有 2017 <br>
+ * Create DateTime: 2018年3月19日 下午4:10:13 <br>
+ *
+ * @author gaoxing
+ */
+interface Cycle {
+	void method1();
+
+	void method2();
+}
+
+interface CycleFactory{
+	Cycle getCycle();
+}
+
+class Unicycle implements Cycle{
+
+	@Override
+	public void method1() {
+		print("Unicycle method1");
+	}
+
+	@Override
+	public void method2() {
+		print("Unicycle method2");
+	}
+}
+
+class UnicycleFactory implements CycleFactory{
+
+	@Override
+	public Cycle getCycle() {
+		return new Unicycle();
+	}
+	
+}
+
+class Bicycle implements Cycle{
+
+	@Override
+	public void method1() {
+		print("Bicycle method1");
+	}
+
+	@Override
+	public void method2() {
+		print("Bicycle method1");
+	}
+	
+}
+
+class BicycleFactory implements CycleFactory{
+
+	@Override
+	public Cycle getCycle() {
+		return new Bicycle();
+	}
+	
+}
+
+class Tricycle implements Cycle {
+
+	@Override
+	public void method1() {
+		print("Tricycle method1");
+	}
+
+	@Override
+	public void method2() {
+		print("Tricycle method1");
+	}
+	
+}
+class TricycleFactory implements CycleFactory{
+
+	@Override
+	public Cycle getCycle() {
+		return new Tricycle();
+	}
+	
+}
+
+public class CycleFactories {
+	public static void cycleFactory() {
+		
+	}
+}

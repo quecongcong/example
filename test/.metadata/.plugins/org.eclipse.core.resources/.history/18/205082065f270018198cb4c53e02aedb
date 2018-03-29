@@ -1,0 +1,71 @@
+package polymorphic;
+
+import static util.Print.*;
+
+import java.util.Scanner;
+
+/**
+ * Title: RoundGlyph.class<br>
+ * Description: <br>
+ * Copyright (c) 人和网版权所有 2017 <br>
+ * Create DateTime: 2018年3月14日 下午2:22:54 <br>
+ *
+ * @author gaoxing
+ */
+
+class Glyph {
+	void draw() {
+		print("Glyph.draw()");
+	}
+
+	public Glyph() {
+		print("Glyph() before draw()");
+		draw();
+		print("Glyph() after draw()");
+	}
+}
+
+class RoundGlyph extends Glyph {
+	private int radius = 1;
+
+	{
+		print("RoundGlyph.draw(),radius = " + radius);
+	}
+
+	public RoundGlyph(int r) {
+		radius = r;
+		print("RoundGlyph.draw(),radius = " + radius);
+	}
+
+	@Override
+	void draw() {
+		print("RoundGlyph.draw(),radius = " + radius);
+	}
+	
+	void test(){
+		
+	}
+}
+
+public class PolyConstructors {
+	public static void main(String[] args) {
+		new RoundGlyph(5);
+		Glyph[] glyph = { new Glyph(), new RoundGlyph(5) };
+		glyph[0].draw();
+		((RoundGlyph)glyph[1]).test();
+		((RoundGlyph)glyph[0]).test();
+		int a, b;
+		Scanner scanner = new Scanner(System.in);
+		a = scanner.nextInt();
+		b = scanner.nextInt();
+		int c = a > b ? b : a;// 两个数之间的最大数
+		int max = 0;
+		for (int i = 1; i <= c; i++) {
+			if (a % i == 0 && b % i == 0) {
+				max = i;
+			}
+		}
+		System.out.println(a + "," + b + "的最大公约数是:" + max);
+		scanner.close();
+	}
+}

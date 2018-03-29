@@ -1,0 +1,13 @@
+package inter;
+import static util.Print.*;
+/**
+ * Title: Music5.class<br>
+ * Description: <br>
+ * Copyright (c) 人和网版权所有 2017    <br>
+ * Create DateTime: 2018年3月15日 上午10:25:57 <br>
+ *
+ * @author gaoxing
+ */
+public class Music5 {
+	
+}

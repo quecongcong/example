@@ -1,0 +1,30 @@
+package com.algorithm;
+
+import java.text.DateFormatSymbols;
+import java.util.Calendar;
+
+public enum EnumDemo {
+	
+	Monday(Calendar.MONDAY),
+	Tuesday(Calendar.TUESDAY),
+	Wednesday(Calendar.WEDNESDAY),
+	Thursday(Calendar.THURSDAY),
+	Friday(Calendar.FRIDAY),
+	Saturday(Calendar.SATURDAY),
+	Sunday(Calendar.SUNDAY);
+	
+	EnumDemo(int index) {
+		this.index = index;
+	}
+	public final int index;
+	private static DateFormatSymbols dateFormatSymbols = new DateFormatSymbols();
+	
+	@Override
+	public String toString() {
+		return dateFormatSymbols.getWeekdays()[index];
+	}
+	public static void main(String[] args) {
+		System.out.println(EnumDemo.Monday.toString());
+		String.format("", "");
+	}
+}

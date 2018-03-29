@@ -1,0 +1,20 @@
+package inter;
+
+/**
+ * Title: Factories.class<br>
+ * Description: <br>
+ * Copyright (c) 人和网版权所有 2017    <br>
+ * Create DateTime: 2018年3月19日 下午3:13:20 <br>
+ *
+ * @author gaoxing
+ */
+interface Service{
+	void method1();
+	void method2();
+}
+interface ServiceFactory{
+	Service getService();
+}
+public class Factories {
+	
+}

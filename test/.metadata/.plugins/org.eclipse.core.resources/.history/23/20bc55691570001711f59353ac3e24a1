@@ -1,0 +1,31 @@
+package com.algorithm;
+
+/**
+ * Title: QuickSort.class<br>
+ * Description: <br>
+ * Copyright (c) 人和网版权所有 2017    <br>
+ * Create DateTime: 2017年7月24日 上午10:04:53 <br>
+ *
+ * @author gaoxing
+ */
+public class QuickSorty {
+	private int[]array;
+	
+	public void setArray(int[]array) {
+		this.array = array;
+	}
+	public int[] getArray() {
+		return this.array;
+	}
+	
+	public void swap(int[]array,int i,int j) {
+		int pos = array[j];
+		array[j] = array[i];
+		array[i] = pos;
+	}
+	
+	public int partition(int[]array,int low,int high) {
+		int partition = array[];
+	}
+	
+}
